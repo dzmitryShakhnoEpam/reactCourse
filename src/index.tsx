@@ -4,24 +4,28 @@ import "./index.css";
 
 class Task1 extends React.Component {
   render() {
-    return React.createElement("div", null, `Task 1 React.CreateElement`);
+    return React.createElement(
+      "div",
+      null,
+      `Hello World Task 1 React.CreateElement`
+    );
   }
 }
 
 class Task2 extends React.Component<any> {
   render() {
-    return <div>Task 2 React.Component</div>;
+    return <div>Hello World Task 2 React.Component</div>;
   }
 }
 
 class Task3 extends React.PureComponent<any> {
   render() {
-    return <div>Task 3 React.PureComponent</div>;
+    return <div>Hello World Task 3 React.PureComponent</div>;
   }
 }
 
 function Task4() {
-  return <div>Task 4 Functional component</div>;
+  return <div>Hello World Task 4 Functional component</div>;
 }
 
 ReactDOM.render(
