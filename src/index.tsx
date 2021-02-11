@@ -1,17 +1,35 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+
+class Task1 extends React.Component {
+  render() {
+    return React.createElement("div", null, `Task 1 React.CreateElement`);
+  }
+}
+
+class Task2 extends React.Component<any> {
+  render() {
+    return <div>Task 2 React.Component</div>;
+  }
+}
+
+class Task3 extends React.PureComponent<any> {
+  render() {
+    return <div>Task 3 React.PureComponent</div>;
+  }
+}
+
+function Task4() {
+  return <div>Task 4 Functional component</div>;
+}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <div>
+    <Task1></Task1>
+    <Task2></Task2>
+    <Task3></Task3>
+    <Task4></Task4>
+  </div>,
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
