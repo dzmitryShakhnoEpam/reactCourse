@@ -17,6 +17,15 @@
                 }
             }
         ],
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "node": "current"
+                }
+            },
+            "babel node"
+        ],
         "@babel/preset-react"
     ],
     "plugins": [
