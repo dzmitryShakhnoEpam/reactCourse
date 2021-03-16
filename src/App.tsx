@@ -1,6 +1,11 @@
 import React from "react";
+import { ErrorBoundary } from "./ErrorBoundary";
 import { MainPage } from "./pages/MainPage";
 
 export default () => {
-  return <MainPage />;
+  return (
+    <ErrorBoundary>
+      <MainPage />
+    </ErrorBoundary>
+  );
 };

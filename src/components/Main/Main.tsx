@@ -1,5 +1,7 @@
 import React from "react";
 import { Categories } from "../Categories/Categories";
+import { FilmsList } from "../FilmsList/FilmsList";
+import { Filter } from "../Filter/Filter";
 import { MainMenu, MainWrapper } from "./Main.style";
 
 export const Main = () => {
@@ -7,8 +9,9 @@ export const Main = () => {
     <MainWrapper>
       <MainMenu>
         <Categories></Categories>
+        <Filter></Filter>
       </MainMenu>
-      <p>Main</p>
+      <FilmsList></FilmsList>
     </MainWrapper>
   );
 };
